@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class LinkedStack<E> implements Stack<E> {
-	private List<E> stackk = new LinkedList<E>();
+	private List<E> stack = new LinkedList<E>();
 
 	@Override
 	public void push(E elem) {
