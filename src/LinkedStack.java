@@ -3,36 +3,23 @@ import java.util.*;
 public class LinkedStack<E> implements Stack<E> {
 	private LinkedList<E> stack = new LinkedList<E>();
 
-	@Override
 	public void push(E elem) {
 		stack.addFirst(elem);
 	}
 
-	@Override
 	public E pop() {
 		return stack.removeFirst();
 	}
 
-	@Override
 	public E peek() {
-		// TODO Auto-generated method stub
-		return null;
+		return stack.peek();
 	}
 
-	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return stack.size() == 0;
 	}
 
-	@Override
 	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
+		return stack.size();
 	}
-
-
-	
-	
-
 }
