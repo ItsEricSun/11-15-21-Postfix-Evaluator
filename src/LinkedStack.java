@@ -22,4 +22,13 @@ public class LinkedStack<E> implements Stack<E> {
 	public int size() {
 		return stack.size();
 	}
+	
+	public String toString() {
+		LinkedList<E> temp = new LinkedList<E>(stack);
+		String s = "";
+		while(temp.size() > 0) {
+			s += temp.pop().toString() + "\n";
+		}
+		return s;
+	}
 }
